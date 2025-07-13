@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        #main {
+            background-color: blue;
+        }
+
+        #section {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <form>
+            <fieldset id="main">
+                <legend style="background-color: red;color: white;">Personal Data</legend>
+                <fieldset id="section">
+                    <legend style="background-color: darkblue;color: white;">Your Name</legend>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="Fname">Frist Name :</label>
+                    <input type="text" id="Fname" name="username" placeholder="ex omar"><br><br>
+                    <label for="Lname">Last Name :</label>
+                    <input type="text" id="Lname" name="username" placeholder="ex mokhtar">
+                </fieldset>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="phone">Your-Phone :</label>
+                <input type="text" name="userphone" id="phone">
+                <br><br>
+                <label for="email">Email :</label>
+                <input type="email" name="useremail" id="email">
+                <br><br>
+                <label for="pass">Password :</label>
+                <input type="password" name="userpass" id="pass" required>
+                <br><br>
+                <label for="repass">Re-Password :</label>
+                <input type="password" name="userpass" id="repass">
+                <br>
+                <br>
+                <br>
+                <br>
+                <select name="country">
+                    <optgroup label="Egypt">
+                        <option value="Cairo">Cairo</option>
+                        <option value="Alexandria">Alexandria</option>
+                        <option value="Mansoura">Mansoura</option>
+                    </optgroup>
+                    <optgroup label="UEA">
+                        <option value="Abu Dhabi">Abu Dhabi</option>
+                        <option value="Ajman">Ajman</option>
+                        <option value="Sharjah">Sharjah</option>
+                    </optgroup>
+                    <optgroup label="Saudi Arabia">
+                        <option value="Riyadh">Riyadh</option>
+                        <option value="Jaddah">Jaddah</option>
+                        <option value="Dammam">Dammam</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <button style="background-color: red; color: white;" type="submit">SUBMIT</button>
+            </fieldset>
+
+        </form>
+    </section>
+</body>
+
+</html>
