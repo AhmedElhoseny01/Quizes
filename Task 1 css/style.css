@@ -1,0 +1,82 @@
+section {
+    text-align: center;
+    padding: 30px 20px;
+    font-family: sans-serif;
+}
+
+
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.diamond {
+    width: 20px;
+    height: 20px;
+    background-color: #18c5cc;
+    transform: rotate(45deg);
+    margin: 20px auto;
+}
+
+.cards {
+    overflow: auto;
+    margin: 20px;
+}
+
+
+.card {
+    text-align: left;
+    width: calc(100% / 3);
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.inner {
+    background-color: white;
+    border: 3px white solid;
+}
+
+.inner img {
+    width: 100%;
+    height: 200px;
+}
+
+.meta span {
+    color: deepskyblue;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.meta {
+    color: gray;
+    font-style: italic;
+}
+
+.img-info {
+    padding: 10px;
+}
+
+.card h3 {
+    font-style: italic;
+}
+
+
+.img-info .desc {
+    color: gray;
+}
+
+.view {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
