@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 20px;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+
+
+}
+
+
+.education,
+.experience {
+    width: 45%;
+}
+
+.card {
+    background: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.year {
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 18px;
+    /* display: inline-block;
+    margin-bottom: 5px; */
+
+}
+
+.location {
+    color: red;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.skills h3 {
+    margin-left: 65px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.inner {
+    width: 40%;
+}
+
+
+.disc {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+
+}
+
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.bar {
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 8px;
+}
+
+.bar div {
+    background: #2ecc71;
+    height: 100%;
+}
+
+.download {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download button {
+    padding: 10px 20px;
+    border: 1px dashed black;
+    border-radius: 20px;
+    background-color: white;
+
+
+}
+
+
+
+.portfolio {
+    width: 100%;
+    clear: both;
+    display: block;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    background-color: rgba(128, 128, 128,0.2);
+}
+.section-title{
+    margin-bottom: 50px;
+}
+
+.portfolio .filters ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    column-gap: 20px;
+}
+
+.portfolio .filters a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.portfolio .filters a:hover {
+    border-bottom: 2px solid #2ecc71;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+  margin: 50px;
+    gap: 5px;
+    margin-bottom: 20px;
+
+}
+
+.portfolio-grid img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+
