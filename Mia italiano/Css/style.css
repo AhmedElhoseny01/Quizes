@@ -59,36 +59,33 @@ body {
 
 }
 
-#about img {
+.cards .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .box .img img {
     width: 100px;
     height: 100px;
 }
 
-.content .img {
+.cards .box .img {
     opacity: 0.5;
 }
 
 
-.content .img:hover {
+.cards .box .img:hover {
     opacity: 1;
 }
 
-.content .img-info .year {
+.cards .box .img-info .year {
     display: block;
     padding-top: 5px;
 }
 
-.main-about {
-    display: flex;
-    flex-wrap: nowrap;
-
-}
-
-@media screen and (min-width: 0px) and (max-width:768px) {
-    .main-about {
-        flex-wrap: wrap;
-    }
-}
+/* end about */
+/* start main-about */
 
 .main-about .left {
     display: flex;
@@ -96,6 +93,8 @@ body {
     align-items: center;
     height: 500px;
     width: 70%;
+    font-family: Kalam, cursive;
+
 
 }
 
@@ -156,8 +155,6 @@ body {
 
 .main-about .right {
     font-family: Kalam, cursive;
-    position: relative;
-    left: 100px;
     margin-top: 50px;
     color: #343434b3;
 }
@@ -191,26 +188,25 @@ body {
     background-color: rgba(255, 166, 0, 0.685);
 }
 
-/* end about */
+/* end main-about */
 /* start menu */
 
 .menu {
-    padding: 30px 0px;
-    height: 600px;
+    padding: 70px 0px;
 }
 
-.menu .row {
+.menu .boxes {
     transform: rotatey(0deg);
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-in;
 }
 
-.menu .row:hover {
+.menu .boxes:hover {
     transform: rotatey(25deg);
 }
 
-.menu .box {
+.menu .boxes .box {
     overflow: hidden;
     height: 500px;
     position: relative;
@@ -220,12 +216,12 @@ body {
     transition-timing-function: ease-in;
 }
 
-.menu .box:hover {
+.menu .boxes .box:hover {
     transform: rotatey(30deg);
 
 }
 
-.menu .box .image {
+.menu .boxes .box .image {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -236,7 +232,7 @@ body {
     width: 100%;
 }
 
-.menu .box .content {
+.menu .boxes .box .info {
     font-family: Merienda, cursive;
     font-size: 20px;
     position: absolute;
@@ -251,17 +247,17 @@ body {
 
 
 
-.menu .box .content:hover {
+.menu .boxes .box .info:hover {
     opacity: 1;
 
 }
 
-.menu .box .content .info h3 {
+.menu .boxes .box .info h3 {
     text-transform: uppercase;
 
 }
 
-.menu .box .content .info a {
+.menu .boxes .box .info a {
     display: block;
     padding: 10px;
     background-color: #ff8400;
@@ -270,7 +266,7 @@ body {
     font-weight: bold;
 }
 
-.menu .box .content .info a:hover {
+.menu .boxes .box .info a:hover {
     background-color: rgba(255, 166, 0, 0.685);
 
 }
@@ -302,22 +298,14 @@ body {
     font-weight: 400;
 }
 
-
-
-.testimonials .content-test {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-.testimonials .content-test .character .information {
+.testimonials .character .information {
     position: relative;
     margin: 50px 0px;
     text-align: center;
     color: #bdbdbd;
 }
 
-.testimonials .content-test .character .information p::before {
+.testimonials .character .information p::before {
     font-family: "Font Awesome 5 Free";
     position: absolute;
     content: "\f10d";
@@ -329,26 +317,19 @@ body {
 
 }
 
-.testimonials .content-test .character .image-con {
+.testimonials .character .image-con {
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
-.testimonials .content-test .character .image-con .image img {
+.testimonials .character .image-con .image img {
     width: 100px;
     border-radius: 50%;
-    position: absolute;
-    transform: translateX(50%);
-    top: -17px;
 }
 
-.testimonials .content-test .character .image-con .image-info {
-    position: relative;
-    right: 10px;
-}
-
-.testimonials .content-test .character .image-con .image-info span {
+.testimonials .character .image-con .image-info span {
     color: #bdbdbd;
 }
 
